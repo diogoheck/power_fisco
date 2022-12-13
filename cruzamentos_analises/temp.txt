@@ -1,0 +1,42 @@
+01	REG	Texto fixo contendo "C170".	C	004	-	O	O
+02	NUM_ITEM	Número sequencial do item no documento fiscal.	N	003	-	O	O
+03	COD_ITEM	Código do item (campo 02 do Registro 0200).	C	060	-	O	O
+04	DESCR_COMPL	Descrição complementar do item como adotado no documento fiscal.	C	-	-	OC	OC
+05	QTD	Quantidade do item.	N	-	05	O	O
+06	UNID	Unidade do item (campo 02 do Registro 0190).	C	006	-	O	O
+07	VL_ITEM	Valor total do item (mercadorias ou serviços).	N	-	02	O	O
+08	VL_DESC	Valor do desconto comercial.	N	-	02	OC	OC
+09	IND_MOV	Movimentação física do ITEM/PRODUTO:
+0: SIM;
+1: NÃO.	C	001*	-	O	O
+10	CST_ICMS	Código da Situação Tributária (CST) referente ao ICMS, conforme a Tabela 4.3.1.	N	003*	-	O	O
+11	CFOP	Código Fiscal de Operação e Prestação (CFOP).	N	004*	-	O	O
+12	COD_NAT	Código da natureza da operação (campo 02 do Registro 0400).	C	010	-	OC	OC
+13	VL_BC_ICMS	Valor da Base de Cálculo (BC) do ICMS.	N	-	02	OC	OC
+14	ALIQ_ICMS	Alíquota do ICMS.	N	006	02	OC	OC
+15	VL_ICMS	Valor do ICMS creditado/debitado.	N	-	02	OC	OC
+16	VL_BC_ICMS_ST	Valor da Base de Cálculo referente à substituição tributária.	N	-	02	OC	OC
+17	ALIQ_ST	Alíquota do ICMS da substituição tributária na Unidade da Federação (UF) de destino.	N	-	02	OC	OC
+18	VL_ICMS_ST	Valor do ICMS referente à substituição tributária.	N	-	02	OC	OC
+19	IND_APUR	Indicador de período de apuração do IPI:
+0: Mensal;
+1: Decendial.	C	001*	-	OC	OC
+20	CST_IPI	Código da Situação Tributária ao IPI, conforme Tabela indicada no item 4.3.2.	C	002*	-	OC	OC
+21	COD_ENQ	Código de enquadramento legal do IPI, conforme tabela indicada no item 4.5.3.	C	003*	-	OC	OC
+22	VL_BC_IPI	Valor da Base de Cálculo do IPI.	N	-	02	OC	OC
+23	ALIQ_IPI	Alíquota do IPI.	N	006	02	OC	OC
+24	VL_IPI	Valor do IPI creditado/debitado.	N	-	02	OC	OC
+25	CST_PIS	Código da Situação Tributária referente ao PIS.	N	002*	-	OC	OC
+26	VL_BC_PIS	Valor da Base de Cálculo do PIS.	N	-	02	OC	OC
+27	ALIQ_PIS	Alíquota do PIS (em percentual).	N	008	04	OC	OC
+28	QUANT_BC_PIS	Quantidade -Base de Cálculo PIS.	N	-	03	OC	OC
+29	ALIQ_PIS	Alíquota do PIS (em Reais).	N	-	04	OC	OC
+30	VL_PIS	Valor do PIS.	N	-	02	OC	OC
+31	CST_COFINS	Código da Situação Tributária referente ao COFINS.	N	002*	-	OC	OC
+32	VL_BC_COFINS	Valor da Base de Cálculo da COFINS.	N	-	02	OC	OC
+33	ALIQ_COFINS	Alíquota do COFINS (em percentual).	N	008	04	OC	OC
+34	QUANT_BC_COFINS	Quantidade -Base de Cálculo COFINS.	N	-	03	OC	OC
+35	ALIQ_COFINS	Alíquota da COFINS (em Reais).	N	-	04	OC	OC
+36	VL_COFINS	Valor da COFINS.	N	-	02	OC	OC
+37	COD_CTA	Código da conta analítica contábil debitada/creditada.	C	-	-	OC	OC
+38	VL_ABAT_NT	Valor do abatimento não tributado e não comercial.	N	-	02	OC	OC
